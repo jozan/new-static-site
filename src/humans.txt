@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Johan Ruokangas -- Web Designer and Developer -- @jruokangas (http://latehours.net)
+
+# THANKS
+
+    My mom
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Normalize.css

@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "name": "PROJECT NAME",
+  "version": "0.0.0",
+  "authors": [
+    "Johan Ruokangas"
+  ],
+  "description": "DESCRIPTION",
+  "license": "Proprietary",
+  "dependencies": {
+    "jquery": "2.1.1",
+    "normalize.css": "3.0.2"
+  }
+}

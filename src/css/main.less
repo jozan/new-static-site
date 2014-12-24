@@ -3,8 +3,8 @@
 
 /* Colorburger */
 @primary: #aaa;
-@secondary: #af04dd;
-@accent: yellow;
+@secondary: #FFEFB0;
+@accent: hsl(198, 59%, 41%);
 
 
 /* Breakpoints */
@@ -36,12 +36,12 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: hsl(48, 100%, 70%);
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: hsl(48, 100%, 70%);
     text-shadow: none;
 }
 
@@ -120,24 +120,35 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-html, body { margin: 0; padding: 0; }
+html, body { margin: 0; padding: 0; height: 100%; }
 * { box-sizing: content-box; }
 
 body {
-    font-family: sans-serif;
+    background: @secondary;
+    border-left: 1px dashed rgba(0,0,0,.2);
+    color: #444;
+    font-family: 'Playfair Display', serif;
+    margin: 0 auto;
+    padding: 48px 0 0 24px;
+    text-align: left;
+    width: 500px;
 }
 
-h1, h2 { font-family: sans-serif; }
+h3 { font-weight: normal; }
 
 a {
     color: @accent;
-    transition: color .2s ease-out;
-    -webkit-transition: color .2s ease-out;
-    -moz-transition: color .2s ease-out;
+    border-bottom: 1px dashed @accent;
+    text-decoration: none;
 
     &:visited { color: @accent; }
-    &:hover { color: @accent; }
+    &:hover {
+        border-bottom-color: hsl(218, 59%, 41%);
+        color: hsl(218, 59%, 41%);
+    }
 }
+
+.ps { color: @secondary; }
 
 
 

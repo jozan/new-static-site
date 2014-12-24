@@ -169,7 +169,25 @@
             ]
         );
 
-        grunt.registerTask('default', ['build']);
+        grunt.registerTask(
+            'dev',
+            [
+                'clean',
+                'jinja',
+                'copy:before',
+                'less',
+                //'imagemin',
+                //'cssmin:combine',
+                'cssmin:minify',
+                'uglify',
+                'hashres',
+                //'htmlmin',
+                'copy:after'
+            ]
+        );
+
+        grunt.registerTask('default', ['dev']);
+        grunt.registerTask('dist', ['build']);
 
     };
 }());

@@ -5,7 +5,7 @@ A simple template for starting to develop static websites such as portfolio, lan
 ## Quick start
 
 1. Make sure you have latest Node.js and nginx installed in your machine
-2. Clone repository: ```git clone https://github.com/jozan/new-static-site.git```
+2. Clone repository: ```git clone https://github.com/jozan/new-static-site.git my-cat-pics```
 3. Follow build instructions below
 4. Configure nginx with the settings below
 
@@ -22,7 +22,11 @@ A simple template for starting to develop static websites such as portfolio, lan
 
 When everything is ready to be published use ```grunt dist``` to minify HTML, CSS, JS, and images.
 
-For continious development and to avoid running ```grunt``` separately after each save use ```grunt watch```. It detects modified files in ```src/``` and runs ```grunt``` automatically.
+### Tips
+
+- For continious development and to avoid running ```grunt``` separately after each save use ```grunt watch```. It detects modified files in ```src/``` and runs ```grunt``` automatically.
+- To have clean git history initialize new git repository by removing ```.git/``` in the project root and run ```git init```.
+- Build script compiles Jinja2 templates by default. Albeit this project is meant to be used for static sites only, having templates is handy in many cases.
 
 
 ------------------------------

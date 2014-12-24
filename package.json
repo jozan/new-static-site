@@ -1,11 +1,11 @@
 {
   "private": true,
-  "name": "PROJECT NAME",
+  "name": "MY-PROJECT",
   "version": "0.0.0",
   "description": "DESCRIPTION",
   "repository": {
     "type": "git",
-    "url": "GIT REPOSITORY URL"
+    "url": "GIT-REPOSITORY-URL"
   },
   "author": "Johan Ruokangas",
   "license": "Proprietary",

@@ -13,13 +13,16 @@ A simple template for starting to develop static websites such as portfolio, lan
 #### Build
 
     npm install -g grunt-cli bower
-    npm install
-    bower install
+    npm install && bower install
     grunt
 
 1. Use node package manager ```npm``` to install ```grunt-cli``` and ```bower``` globally ```-g``` in your machine
 2. Install required scripts and their dependecies decleared in ```package.json``` and ```bower.json```
 3. Run ```grunt``` to build your site from source and deploy to ```public``` directory in the project root
+
+When everything is ready to be published use ```grunt dist``` to minify HTML, CSS, JS, and images.
+
+For continious development and to avoid running ```grunt``` separately after each save use ```grunt watch```. It detects modified files in ```src/``` and runs ```grunt``` automatically.
 
 
 ------------------------------

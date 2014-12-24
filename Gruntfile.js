@@ -13,7 +13,8 @@
                 }
             },
             clean: {
-                default: ['temp']
+                default: ['temp'],
+                dist: ['temp', 'public']
             },
             jinja: {
                 options: {
@@ -92,9 +93,9 @@
                 }
             },
             cssmin: {
-                combine: {
+                target: {
                     files: {
-                        //'temp/css/style.css': ['temp/css/normalize.css', 'temp/css/main.css'],
+                        'temp/css/style.css': ['temp/css/normalize.css', 'temp/css/main.css'],
                     }
                 },
                 minify: {
@@ -155,12 +156,12 @@
         grunt.registerTask(
             'build',
             [
-                'clean',
+                'clean:dist',
                 'jinja',
                 'copy:before',
                 'less',
                 'imagemin',
-                //'cssmin:combine',
+                'cssmin:target',
                 'cssmin:minify',
                 'uglify',
                 'hashres',
@@ -172,12 +173,12 @@
         grunt.registerTask(
             'dev',
             [
-                'clean',
+                'clean:default',
                 'jinja',
                 'copy:before',
                 'less',
                 //'imagemin',
-                //'cssmin:combine',
+                'cssmin:target',
                 'cssmin:minify',
                 'uglify',
                 'hashres',

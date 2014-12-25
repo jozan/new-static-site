@@ -9,7 +9,10 @@
             watch: {
                 default: {
                     files: ['Gruntfile.js', 'bower.json', 'src/**/*'],
-                    tasks: ['default']
+                    tasks: ['default'],
+                    options: {
+                        livereload: true
+                    }
                 }
             },
             clean: {

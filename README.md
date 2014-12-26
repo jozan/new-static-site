@@ -50,6 +50,10 @@ After running ```npm install```, ```bower install```, and ```grunt``` your proje
 		    `-- [ temporary folder for grunt tasks, do not edit ]
 
 
+### Using with backend frameworks
+
+Configure output path of ```copy:after``` in ```Gruntfile.js``` to match your framework's public path. Create views normally and configure ```hashres``` to check those files.
+
 ------------------------------
 
 

@@ -2,6 +2,9 @@
 
 A simple template for starting to develop static websites such as portfolio, landing page etc. This project utilizes customized [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate) and handful of build scripts that ensure fast and iterative development and easy deployment.
 
+## Project plans
+Gulp will replace grunt in the future. Until that happens there will be no updates so don't hold your breath.
+
 ## Quick start
 
 1. Make sure you have latest Node.js and nginx installed in your machine
